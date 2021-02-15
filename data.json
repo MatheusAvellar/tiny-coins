@@ -1,0 +1,156 @@
+{
+  "currencies": [
+    {
+      "name": "Real",
+      "country": "Brasil",
+      "iso": "BRL",
+      "symbol": "R$",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Surinamense",
+      "country": "Suriname",
+      "iso": "SRD",
+      "symbol": "Sr$",
+      "min": {
+        "value": [1,100],
+        "composition":  ["bronze", "aluminium", "copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dalasi",
+      "country": "Gâmbia",
+      "iso": "GMD",
+      "symbol": "D",
+      "min": {
+        "value": [1,100],
+        "composition":  ["bronze", "copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Americano",
+      "country": "EUA",
+      "iso": "USD",
+      "symbol": "US$",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper","copper-nickel","bronze","zinc-plated-steel","copper-plated-zinc"]
+      }
+    },
+    {
+      "name": "Dólar das Ilhas Cayman",
+      "country": "Ilhas Cayman",
+      "iso": "KYD",
+      "symbol": "CI$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Paʻanga",
+      "country": "Tonga",
+      "iso": "TOP",
+      "symbol": "T$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze"]
+      }
+    },
+    {
+      "name": "Kina",
+      "country": "Papua Nova Guiné",
+      "iso": "PGK",
+      "symbol": "K",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-plated-zinc"]
+      }
+    },
+    {
+      "name": "Lempira",
+      "country": "Honduras",
+      "iso": "HNL",
+      "symbol": "L",
+      "min": {
+        "value": [1,100],
+        "last-minted": 1998,
+        "composition": ["copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Barbadense",
+      "country": "Barbados",
+      "iso": "BBD",
+      "symbol": "Bds$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","copper-plated-zinc","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Bahamense",
+      "country": "Bahamas",
+      "iso": "BSD",
+      "symbol": "B$",
+      "min": {
+        "value": [1,100],
+        "composition": ["nickel-brass","brass","copper-plated-zinc","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar das Ilhas Salomão",
+      "country": "Ilhas Salomão",
+      "iso": "SBD",
+      "symbol": "SI$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze", "bronze-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Fijiano",
+      "country": "Fiji",
+      "iso": "FJD",
+      "symbol": "FJ$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze", "copper-plated-zinc", "copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Vatu",
+      "country": "Vanuatu",
+      "iso": "VUV",
+      "symbol": "VT",
+      "min": {
+        "value": [1,1],
+        "composition": ["nickel-brass"]
+      }
+    },
+    {
+      "name": "Kip",
+      "country": "Laos",
+      "iso": "LAK",
+      "symbol": "₭",
+      "min": {
+        "den": [1,100],
+        "value": [1,10],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Baht",
+      "country": "Tailândia",
+      "iso": "THB",
+      "symbol": "฿",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","tin","aluminium"]
+      }
+    }
+  ]
+}
