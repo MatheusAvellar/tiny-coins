@@ -142,6 +142,14 @@ li article .description .value .copper-plated-zinc::before {
   background-color: #d6d6d6;
   border: 0.25em solid #cd9f86;
 }
+li article .description .value .copper-nickel-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #e6e6e6;
+}
+li article .description .value .nickel-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #e4dfc4;
+}
 li article .description .value .copper::before {
   background-color: #cd9f86;
 }
@@ -178,7 +186,7 @@ li article .description .value.tiny {
   </header>
   <main>
     <p id="coin-total">
-      <span id="coin-count">??</span> / 171 moedas cadastradas
+      <span id="coin-count">??</span> moedas cadastradas
     </p>
     <section>
       <ul id="coins"></ul>
@@ -189,8 +197,10 @@ const coins = document.getElementById("coins");
 const composition_map = {
   "zinc-plated-steel": "Aço revestido com zinco",
   "bronze-plated-steel": "Aço revestido com bronze",
+  "nickel-plated-steel": "Aço revestido com níquel",
   "copper-plated-steel": "Aço revestido com cobre",
   "copper-plated-zinc": "Zinco revestido com cobre",
+  "copper-nickel-plated-steel": "Aço revestido com cuproníquel",
   "copper-nickel": "Cuproníquel",
   "copper": "Cobre",
   "nickel-brass": "Alpaca",
@@ -229,7 +239,7 @@ loadJSON("data.json", function(json) {
       info.className = "info";
         const name = document.createElement("h3");
         name.textContent = c.name;
-        if(c.name.length > 10)
+        if(c.name.length > 13)
           name.className = "smol";
         name.dataset.iso = c.iso;
         info.appendChild(name);
@@ -239,10 +249,10 @@ loadJSON("data.json", function(json) {
         ["País", c.country],
         ["Subdivisão", "den" in c.min?c.min.den:c.min.value],
         ["Menor Valor", c.symbol],
-        ["Composição", c.min.composition || ""]
+        ["Histórico das Composições", c.min.composition || ""]
       ].forEach(d => {
         let desc, label;
-        if(d[0] == "Composição") {
+        if(d[0] == "Histórico das Composições") {
           desc = document.createElement("details");
           desc.className = "description long";
           label = document.createElement("summary")
@@ -272,7 +282,7 @@ loadJSON("data.json", function(json) {
             }
           } else if(typeof value[0] == "string") {
             switch(d[0]) {
-              case "Composição":
+              case "Histórico das Composições":
                 d[1].forEach(comp => {
                   const sp = document.createElement("span");
                   sp.className = comp;

@@ -21,6 +21,26 @@
       }
     },
     {
+      "name": "Dólar Belizenho",
+      "country": "Belize",
+      "iso": "BZD",
+      "symbol": "BZ$",
+      "min": {
+        "value": [1,100],
+        "composition":  ["bronze", "aluminium"]
+      }
+    },
+    {
+      "name": "Dólar de Trinidad e Tobago",
+      "country": "Trinidad e Tobago",
+      "iso": "TTD",
+      "symbol": "TT$",
+      "min": {
+        "value": [1,100],
+        "composition":  ["bronze"]
+      }
+    },
+    {
       "name": "Dalasi",
       "country": "Gâmbia",
       "iso": "GMD",
@@ -31,13 +51,14 @@
       }
     },
     {
-      "name": "Dólar Americano",
+      "name": "Dólar Estadunidense",
       "country": "EUA",
       "iso": "USD",
       "symbol": "US$",
       "min": {
-        "value": [1,100],
-        "composition": ["copper","copper-nickel","bronze","zinc-plated-steel","copper-plated-zinc"]
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["copper"]
       }
     },
     {
@@ -61,6 +82,27 @@
       }
     },
     {
+      "name": "Libra Manesa",
+      "country": "Ilha de Man",
+      "iso": "IMP",
+      "symbol": "£",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["bronze"]
+      }
+    },
+    {
+      "name": "Dólar Estadunidense",
+      "country": "Timor Leste",
+      "iso": "TLD",
+      "symbol": "US$",
+      "min": {
+        "value": [1,100],
+        "composition": ["nickel-plated-steel"]
+      }
+    },
+    {
       "name": "Kina",
       "country": "Papua Nova Guiné",
       "iso": "PGK",
@@ -77,8 +119,59 @@
       "symbol": "L",
       "min": {
         "value": [1,100],
-        "last-minted": 1998,
         "composition": ["copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Libra Gibraltina",
+      "country": "Gibraltar",
+      "iso": "GIP",
+      "symbol": "£",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","bronze-plated-steel"]
+      }
+    },
+    {
+      "name": "Libra das Malvinas",
+      "country": "Ilhas Malvinas",
+      "iso": "FKP",
+      "symbol": "FK£",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["bronze"]
+      }
+    },
+    {
+      "name": "Florim das Antilhas Holandesas",
+      "country": "Antilhas Holandesas",
+      "iso": "ANG",
+      "symbol": "NAƒ",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","aluminium"]
+      }
+    },
+    {
+      "name": "Won Norte-Coreano",
+      "country": "Coreia do Norte",
+      "iso": "KPW",
+      "symbol": "₩",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Won Sul-Coreano",
+      "country": "Coreia do Sul",
+      "iso": "KRW",
+      "symbol": "₩",
+      "min": {
+        "value": [1,100],
+        "composition": ["brass", "aluminium"]
       }
     },
     {
@@ -129,6 +222,57 @@
       "min": {
         "value": [1,1],
         "composition": ["nickel-brass"]
+      }
+    },
+    {
+      "name": "Marco Finlandês",
+      "country": "Finlândia",
+      "iso": "FIM",
+      "symbol": "mk",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper","aluminium"]
+      }
+    },
+    {
+      "name": "Rublo Russo",
+      "country": "Rússia",
+      "iso": "RUB",
+      "symbol": "₽",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-nickel-plated-steel"]
+      }
+    },
+    {
+      "name": "Renminbi",
+      "country": "China",
+      "iso": "CNY",
+      "symbol": "元",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Leu Moldávio",
+      "country": "Moldávia",
+      "iso": "MDL",
+      "symbol": "L",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Libra Cipriota",
+      "country": "Chipre",
+      "iso": "CYP",
+      "symbol": "£",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["aluminium"]
       }
     },
     {
