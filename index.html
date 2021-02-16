@@ -150,6 +150,10 @@ li article .description .value .nickel-plated-steel::before {
   background-color: #b9b9b9;
   border: 0.25em solid #e4dfc4;
 }
+li article .description .value .chromium-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #d7e4e4;
+}
 li article .description .value .copper::before {
   background-color: #cd9f86;
 }
@@ -168,8 +172,14 @@ li article .description .value .bronze::before {
 li article .description .value .aluminium::before {
   background-color: #d0d0d0;
 }
+li article .description .value .aluminium-bronze::before {
+  background-color: #c3b665;
+}
 li article .description .value .tin::before {
   background-color: #d4dedb;
+}
+li article .description .value .stainless-steel::before {
+  background-color: #ccc;
 }
 li article .description .value.tiny {
   font-size: 80%;
@@ -198,6 +208,7 @@ const composition_map = {
   "zinc-plated-steel": "Aço revestido com zinco",
   "bronze-plated-steel": "Aço revestido com bronze",
   "nickel-plated-steel": "Aço revestido com níquel",
+  "chromium-plated-steel": "Aço revestido com crômio",
   "copper-plated-steel": "Aço revestido com cobre",
   "copper-plated-zinc": "Zinco revestido com cobre",
   "copper-nickel-plated-steel": "Aço revestido com cuproníquel",
@@ -207,7 +218,9 @@ const composition_map = {
   "brass": "Latão",
   "bronze": "Bronze",
   "aluminium": "Alumínio",
+  "aluminium-bronze": "Bronze de alumínio",
   "tin": "Estanho",
+  "stainless-steel": "Aço inoxidável",
 };
 
 loadJSON("data.json", function(json) {

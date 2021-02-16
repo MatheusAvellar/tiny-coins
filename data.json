@@ -7,7 +7,7 @@
       "symbol": "R$",
       "min": {
         "value": [1,100],
-        "composition": ["copper-plated-steel"]
+        "composition": ["stainless-steel","copper-plated-steel"]
       }
     },
     {
@@ -93,6 +93,16 @@
       }
     },
     {
+      "name": "Libra Egípcia",
+      "country": "Egito",
+      "iso": "EGP",
+      "symbol": "E£",
+      "min": {
+        "value": [1,1000],
+        "composition": ["aluminium"]
+      }
+    },
+    {
       "name": "Dólar Estadunidense",
       "country": "Timor Leste",
       "iso": "TLD",
@@ -100,6 +110,26 @@
       "min": {
         "value": [1,100],
         "composition": ["nickel-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Estadunidense",
+      "country": "Equador",
+      "iso": "ECD",
+      "symbol": "US$",
+      "min": {
+        "value": [1,100],
+        "composition": ["brass","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Guianês",
+      "country": "Guiana",
+      "iso": "GYD",
+      "symbol": "G$",
+      "min": {
+        "value": [1,100],
+        "composition": ["nickel-brass"]
       }
     },
     {
@@ -170,8 +200,18 @@
       "iso": "KRW",
       "symbol": "₩",
       "min": {
-        "value": [1,100],
+        "value": [1,1],
         "composition": ["brass", "aluminium"]
+      }
+    },
+    {
+      "name": "Dólar Jamaicano",
+      "country": "Jamaica",
+      "iso": "JMD",
+      "symbol": "J$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","aluminium"]
       }
     },
     {
@@ -294,6 +334,121 @@
       "min": {
         "value": [1,100],
         "composition": ["bronze","tin","aluminium"]
+      }
+    },
+    {
+      "name": "Dólar Australiano",
+      "country": "Austrália",
+      "iso": "AUD",
+      "symbol": "AU$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze"]
+      }
+    },
+    {
+      "name": "Peso Argentino",
+      "country": "Argentina",
+      "iso": "ARS",
+      "symbol": "$",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium-bronze","bronze"]
+      }
+    },
+    {
+      "name": "Peso Uruguaio",
+      "country": "Uruguai",
+      "iso": "UYU",
+      "symbol": "$U",
+      "min": {
+        "den": [1,100],
+        "value": [1,10],
+        "composition": ["stainless-steel"]
+      }
+    },
+    {
+      "name": "Peso Chileno",
+      "country": "Chile",
+      "iso": "CLP",
+      "symbol": "$",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Peso Mexicano",
+      "country": "México",
+      "iso": "MXN",
+      "symbol": "Mex$",
+      "min": {
+        "den": [1,100],
+        "value": [5,100],
+        "composition": ["stainless-steel"]
+      }
+    },
+    {
+      "name": "Balboa",
+      "country": "Panamá",
+      "iso": "PAB",
+      "symbol": "B/. ",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["copper-nickel"]
+      }
+    },
+    {
+      "name": "Sol",
+      "country": "Peru",
+      "iso": "PEN",
+      "symbol": "S/",
+      "min": {
+        "value": [1,100],
+        "composition": ["brass","aluminium"]
+      }
+    },
+    {
+      "name": "Boliviano",
+      "country": "Bolívia",
+      "iso": "BOB",
+      "symbol": "Bs",
+      "min": {
+        "den": [1,100],
+        "value": [2,100],
+        "composition": ["stainless-steel"]
+      }
+    },
+    {
+      "name": "Córdoba",
+      "country": "Nicarágua",
+      "iso": "NIO",
+      "symbol": "C$",
+      "min": {
+        "den": [1,100],
+        "value": [5,100],
+        "composition": ["chromium-plated-steel","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Dólar Canadense",
+      "country": "Canadá",
+      "iso": "CAD",
+      "symbol": "CA$",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","copper","copper-plated-zinc","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Euro",
+      "country": "União Europeia",
+      "iso": "EUR",
+      "symbol": "€",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-plated-steel"]
       }
     }
   ]
