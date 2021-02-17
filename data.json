@@ -332,8 +332,9 @@
       "iso": "THB",
       "symbol": "฿",
       "min": {
-        "value": [1,100],
-        "composition": ["bronze","tin","aluminium"]
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["bronze"]
       }
     },
     {
