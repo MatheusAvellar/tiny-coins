@@ -1,0 +1,198 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+header,main,footer {
+  max-width: 768px;
+  margin: auto;
+  padding: 1em;
+}
+#coin-total {
+  text-align: right;
+  margin-bottom: 1em;
+}
+#coin-count {
+  font-weight: 700;
+  font-size: 150%;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  width: 90%;
+}
+h3.smol {
+  font-size: 24px;
+}
+h3::after {
+  content: attr(data-iso);
+  text-transform: uppercase;
+  font-size: 75%;
+  color: cadetblue;
+  vertical-align: top;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  background: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  max-width: 650px;
+  margin: auto;
+}
+li > article {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  grid-auto-flow: dense;
+  position: relative;
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 3px 15px rgb(51 51 51 / 20%);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+li figure {
+  padding: 25px 20px 20px;
+  grid-row: 1/4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+li figure img {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #eaeaea;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cacaca' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+li article .info {
+  grid-column: span 3;
+  padding: 20px 25px 15px 0;
+}
+li article .description {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+li article .description.long {
+  grid-column: 2/5;
+}
+li article .description .label {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+li article .description .value {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+li article .description .value span {
+  display: block;
+}
+li article .description .value span::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+li article .description .value .copper-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #cd9f86;
+}
+li article .description .value .bronze-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #ca8037;
+}
+li article .description .value .zinc-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #d6d6d6;
+}
+li article .description .value .copper-plated-zinc::before {
+  background-color: #d6d6d6;
+  border: 0.25em solid #cd9f86;
+}
+li article .description .value .copper-nickel-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #e6e6e6;
+}
+li article .description .value .nickel-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #e4dfc4;
+}
+li article .description .value .chromium-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #d7e4e4;
+}
+li article .description .value .copper::before {
+  background-color: #cd9f86;
+}
+li article .description .value .copper-nickel::before {
+  background-color: #e6e6e6;
+}
+li article .description .value .nickel-brass::before {
+  background-color: #bfa945;
+}
+li article .description .value .brass::before {
+  background-color: #d2bf60;
+}
+li article .description .value .bronze::before {
+  background-color: #ca8037;
+}
+li article .description .value .aluminium::before {
+  background-color: #d0d0d0;
+}
+li article .description .value .aluminium-bronze::before {
+  background-color: #c3b665;
+}
+li article .description .value .tin::before {
+  background-color: #d4dedb;
+}
+li article .description .value .stainless-steel::before {
+  background-color: #ccc;
+}
+li article .description .value.tiny {
+  font-size: 80%;
+  font-weight: 700;
+}
+@media screen and (max-width: 650px) {
+  h3 {
+    font-size: 24px;
+  }
+  li > article {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr auto 1fr auto;
+  }
+  li figure {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  li article .info, li article .description {
+    padding: 0 20px;
+  }
+  li article .description.long {
+    grid-column: 1/4;
+  }
+}
