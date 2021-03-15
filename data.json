@@ -443,6 +443,16 @@
       }
     },
     {
+      "name": "Litas",
+      "country": "Lituânia",
+      "iso": "LTL",
+      "symbol": "Lt",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
       "name": "Euro",
       "country": "União Europeia",
       "iso": "EUR",
