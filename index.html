@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Tiny Coins</title>
   <meta name="author" content="Matheus Avellar">
-  <meta name="description" content="Um estudo das moedas de menor valor em cada sistema monetário.">
+  <meta name="description" content="Tiny coins from my tiny collection!">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./style.css">
@@ -13,12 +13,12 @@
   <header>
     <h1> Tiny Coins </h1>
     <p>
-      Um estudo(?) das moedas de menor valor em cada sistema monetário.
+      Tiny coins from my tiny collection.
     </p>
   </header>
   <main>
     <p id="coin-total">
-      <span id="coin-count">??</span> moedas cadastradas
+      <span id="coin-count">??</span> catalogued tiny coins
     </p>
     <section>
       <ul id="coins"></ul>
@@ -27,23 +27,44 @@
     <script>
 const coins = document.getElementById("coins");
 const composition_map = {
-  "zinc-plated-steel": "Aço revestido com zinco",
-  "bronze-plated-steel": "Aço revestido com bronze",
-  "nickel-plated-steel": "Aço revestido com níquel",
-  "chromium-plated-steel": "Aço revestido com crômio",
-  "copper-plated-steel": "Aço revestido com cobre",
-  "copper-plated-zinc": "Zinco revestido com cobre",
-  "copper-nickel-plated-steel": "Aço revestido com cuproníquel",
-  "copper-nickel": "Cuproníquel",
-  "copper": "Cobre",
-  "nickel-brass": "Alpaca",
-  "brass": "Latão",
-  "bronze": "Bronze",
-  "aluminium": "Alumínio",
-  "aluminium-bronze": "Bronze de alumínio",
-  "tin": "Estanho",
-  "stainless-steel": "Aço inoxidável",
+  pt: {
+    "zinc-plated-steel": "Aço revestido com zinco",
+    "bronze-plated-steel": "Aço revestido com bronze",
+    "nickel-plated-steel": "Aço revestido com níquel",
+    "chromium-plated-steel": "Aço revestido com crômio",
+    "copper-plated-steel": "Aço revestido com cobre",
+    "copper-plated-zinc": "Zinco revestido com cobre",
+    "copper-nickel-plated-steel": "Aço revestido com cuproníquel",
+    "copper-nickel": "Cuproníquel",
+    "copper": "Cobre",
+    "nickel-brass": "Alpaca",
+    "brass": "Latão",
+    "bronze": "Bronze",
+    "aluminium": "Alumínio",
+    "aluminium-bronze": "Bronze de alumínio",
+    "tin": "Estanho",
+    "stainless-steel": "Aço inoxidável"
+  },
+  en: {
+    "zinc-plated-steel": "Zinc-plated Steel",
+    "bronze-plated-steel": "Bronze-plated Steel",
+    "nickel-plated-steel": "Nickel-plated Steel",
+    "chromium-plated-steel": "Chromium-plated Steel",
+    "copper-plated-steel": "Copper-plated Steel",
+    "copper-plated-zinc": "Copper-plated Zinc",
+    "copper-nickel-plated-steel": "Copper-nickel-plated Steel",
+    "copper-nickel": "Copper-nickel",
+    "copper": "Copper",
+    "nickel-brass": "Nickel-brass",
+    "brass": "Brass",
+    "bronze": "Bronze",
+    "aluminium": "Aluminium",
+    "aluminium-bronze": "Aluminium-bronze",
+    "tin": "Tin",
+    "stainless-steel": "Stainless Steel"
+  }
 };
+const lang = "en";
 
 loadJSON("data.json", function(json) {
   document.getElementById("coin-count").textContent = json.currencies.length;
@@ -80,14 +101,15 @@ loadJSON("data.json", function(json) {
         info.appendChild(name);
       profile.appendChild(info);
 
+      // TODO: Redo. I hate everything about this.
       [
-        ["País", c.country],
-        ["Subdivisão", "den" in c.min?c.min.den:c.min.value],
-        ["Menor Valor", c.symbol],
-        ["Histórico das Composições", c.min.composition || ""]
+        ["Country", c.country],
+        ["Subdivision", "den" in c.min?c.min.den:c.min.value],
+        ["Tiniest Value", c.symbol],
+        ["Composition History", c.min.composition || ""]
       ].forEach(d => {
         let desc, label;
-        if(d[0] == "Histórico das Composições") {
+        if(d[0] == "Composition History") {
           desc = document.createElement("details");
           desc.className = "description long";
           label = document.createElement("summary")
@@ -96,52 +118,52 @@ loadJSON("data.json", function(json) {
           desc.className = "description";
           label = document.createElement("p")
         }
-          label.className = "label";
-          label.textContent = d[0];
-          desc.appendChild(label);
+        label.className = "label";
+        label.textContent = d[0];
+        desc.appendChild(label);
 
-          const val = document.createElement("p");
-          val.classList.add("value");
-          const value = d[1];
-          if(typeof value == "string") {
-            const v = c.min.value;
-            const dec = padEnd(v[0]/v[1]);
-            switch(d[0]) {
-              case "País":  val.textContent = value; break;
-              case "Menor Valor":
-                const st = document.createElement("strong");
-                st.textContent = dec;
-                val.appendChild(document.createTextNode(value));
-                val.appendChild(st);
-                break;
-            }
-          } else if(typeof value[0] == "string") {
-            switch(d[0]) {
-              case "Histórico das Composições":
-                d[1].forEach(comp => {
-                  const sp = document.createElement("span");
-                  sp.className = comp;
-                  sp.textContent = composition_map[comp] || "?";
-                  val.appendChild(sp);
-                });
-                break;
-            }
-          } else if(value[0] / value[1] >= 1) {
-            val.classList.add("tiny");
-            val.appendChild(document.createTextNode("–"));
-          } else {
-            const num = document.createElement("sup");
-            const den = document.createElement("sub");
-            num.textContent = value[0];
-            den.textContent = value[1];
-            val.classList.add("tiny");
-            val.appendChild(num);
-            val.appendChild(document.createTextNode("/"));
-            val.appendChild(den);
+        const val = document.createElement("p");
+        val.classList.add("value");
+        const value = d[1];
+        if(typeof value == "string") {
+          const v = c.min.value;
+          const dec = padEnd(v[0]/v[1]);
+          switch(d[0]) {
+            case "Country":  val.textContent = value; break;
+            case "Tiniest Value":
+              const st = document.createElement("strong");
+              st.textContent = dec;
+              val.appendChild(document.createTextNode(value));
+              val.appendChild(st);
+              break;
           }
-          desc.appendChild(val);
-        profile.appendChild(desc);
-      });
+        } else if(typeof value[0] == "string") {
+          switch(d[0]) {
+            case "Composition History":
+              d[1].forEach(comp => {
+                const sp = document.createElement("span");
+                sp.className = comp;
+                sp.textContent = composition_map[lang][comp] || "?";
+                val.appendChild(sp);
+              });
+              break;
+          }
+        } else if(value[0] / value[1] >= 1) {
+          val.classList.add("tiny");
+          val.appendChild(document.createTextNode("–"));
+        } else {
+          const num = document.createElement("sup");
+          const den = document.createElement("sub");
+          num.textContent = value[0];
+          den.textContent = value[1];
+          val.classList.add("tiny");
+          val.appendChild(num);
+          val.appendChild(document.createTextNode("/"));
+          val.appendChild(den);
+        }
+        desc.appendChild(val);
+      profile.appendChild(desc);
+    });
 
     li.appendChild(profile);
     coins.appendChild(li);
@@ -157,7 +179,7 @@ function padEnd(n) {
     </script>
   </main>
   <footer>
-    
+    <!-- ¯\_(ツ)_/¯ -->
   </footer>
   <!--[Ref] csswizardry.com/2020/05/the-fastest-google-fonts-->
   <link rel="preload" as="style"

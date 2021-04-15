@@ -2,7 +2,7 @@
   "currencies": [
     {
       "name": "Real",
-      "country": "Brasil",
+      "country": "Brazil",
       "iso": "BRL",
       "symbol": "R$",
       "min": {
@@ -11,7 +11,7 @@
       }
     },
     {
-      "name": "Dólar Surinamense",
+      "name": "Dollar",
       "country": "Suriname",
       "iso": "SRD",
       "symbol": "Sr$",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "name": "Dólar Belizenho",
+      "name": "Dollar",
       "country": "Belize",
       "iso": "BZD",
       "symbol": "BZ$",
@@ -31,8 +31,8 @@
       }
     },
     {
-      "name": "Dólar de Trinidad e Tobago",
-      "country": "Trinidad e Tobago",
+      "name": "Dollar",
+      "country": "Trinidad & Tobago",
       "iso": "TTD",
       "symbol": "TT$",
       "min": {
@@ -42,7 +42,7 @@
     },
     {
       "name": "Dalasi",
-      "country": "Gâmbia",
+      "country": "The Gambia",
       "iso": "GMD",
       "symbol": "D",
       "min": {
@@ -51,8 +51,8 @@
       }
     },
     {
-      "name": "Dólar Estadunidense",
-      "country": "EUA",
+      "name": "Dollar",
+      "country": "USA",
       "iso": "USD",
       "symbol": "US$",
       "min": {
@@ -62,8 +62,8 @@
       }
     },
     {
-      "name": "Dólar das Ilhas Cayman",
-      "country": "Ilhas Cayman",
+      "name": "Dollar",
+      "country": "Cayman Islands",
       "iso": "KYD",
       "symbol": "CI$",
       "min": {
@@ -82,8 +82,8 @@
       }
     },
     {
-      "name": "Libra Manesa",
-      "country": "Ilha de Man",
+      "name": "Pound",
+      "country": "Isle of Man",
       "iso": "IMP",
       "symbol": "£",
       "min": {
@@ -93,8 +93,8 @@
       }
     },
     {
-      "name": "Libra Egípcia",
-      "country": "Egito",
+      "name": "Pound",
+      "country": "Egypt",
       "iso": "EGP",
       "symbol": "E£",
       "min": {
@@ -103,8 +103,8 @@
       }
     },
     {
-      "name": "Dólar Estadunidense",
-      "country": "Timor Leste",
+      "name": "Dollar",
+      "country": "East Timor",
       "iso": "TLD",
       "symbol": "US$",
       "min": {
@@ -113,8 +113,8 @@
       }
     },
     {
-      "name": "Dólar Estadunidense",
-      "country": "Equador",
+      "name": "Dollar",
+      "country": "Ecuador",
       "iso": "ECD",
       "symbol": "US$",
       "min": {
@@ -123,8 +123,8 @@
       }
     },
     {
-      "name": "Dólar Guianês",
-      "country": "Guiana",
+      "name": "Dollar",
+      "country": "Guyana",
       "iso": "GYD",
       "symbol": "G$",
       "min": {
@@ -134,7 +134,7 @@
     },
     {
       "name": "Kina",
-      "country": "Papua Nova Guiné",
+      "country": "Papua New Guinea",
       "iso": "PGK",
       "symbol": "K",
       "min": {
@@ -153,7 +153,7 @@
       }
     },
     {
-      "name": "Libra Gibraltina",
+      "name": "Pound",
       "country": "Gibraltar",
       "iso": "GIP",
       "symbol": "£",
@@ -163,8 +163,8 @@
       }
     },
     {
-      "name": "Libra das Malvinas",
-      "country": "Ilhas Malvinas",
+      "name": "Pound",
+      "country": "Falkland Islands",
       "iso": "FKP",
       "symbol": "FK£",
       "min": {
@@ -174,8 +174,8 @@
       }
     },
     {
-      "name": "Florim das Antilhas Holandesas",
-      "country": "Antilhas Holandesas",
+      "name": "Guilder",
+      "country": "Netherlands Antilles",
       "iso": "ANG",
       "symbol": "NAƒ",
       "min": {
@@ -184,8 +184,8 @@
       }
     },
     {
-      "name": "Won Norte-Coreano",
-      "country": "Coreia do Norte",
+      "name": "Won",
+      "country": "North Korea",
       "iso": "KPW",
       "symbol": "₩",
       "min": {
@@ -195,8 +195,8 @@
       }
     },
     {
-      "name": "Won Sul-Coreano",
-      "country": "Coreia do Sul",
+      "name": "Won",
+      "country": "South Korea",
       "iso": "KRW",
       "symbol": "₩",
       "min": {
@@ -205,7 +205,7 @@
       }
     },
     {
-      "name": "Dólar Jamaicano",
+      "name": "Dollar",
       "country": "Jamaica",
       "iso": "JMD",
       "symbol": "J$",
@@ -215,7 +215,7 @@
       }
     },
     {
-      "name": "Dólar Barbadense",
+      "name": "Dollar",
       "country": "Barbados",
       "iso": "BBD",
       "symbol": "Bds$",
@@ -225,7 +225,7 @@
       }
     },
     {
-      "name": "Dólar Bahamense",
+      "name": "Dollar",
       "country": "Bahamas",
       "iso": "BSD",
       "symbol": "B$",
@@ -235,8 +235,8 @@
       }
     },
     {
-      "name": "Dólar das Ilhas Salomão",
-      "country": "Ilhas Salomão",
+      "name": "Dollar",
+      "country": "Solomon Islands",
       "iso": "SBD",
       "symbol": "SI$",
       "min": {
@@ -245,7 +245,7 @@
       }
     },
     {
-      "name": "Dólar Fijiano",
+      "name": "Dollar",
       "country": "Fiji",
       "iso": "FJD",
       "symbol": "FJ$",
@@ -265,8 +265,8 @@
       }
     },
     {
-      "name": "Marco Finlandês",
-      "country": "Finlândia",
+      "name": "Markka",
+      "country": "Finland",
       "iso": "FIM",
       "symbol": "mk",
       "min": {
@@ -275,13 +275,23 @@
       }
     },
     {
-      "name": "Rublo Russo",
-      "country": "Rússia",
+      "name": "Ruble",
+      "country": "Russia",
       "iso": "RUB",
       "symbol": "₽",
       "min": {
         "value": [1,100],
         "composition": ["copper-nickel-plated-steel"]
+      }
+    },
+    {
+      "name": "Ruble",
+      "country": "Belarus",
+      "iso": "BYN",
+      "symbol": "Br",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-plated-steel"]
       }
     },
     {
@@ -295,8 +305,8 @@
       }
     },
     {
-      "name": "Leu Moldávio",
-      "country": "Moldávia",
+      "name": "Leu",
+      "country": "Moldova",
       "iso": "MDL",
       "symbol": "L",
       "min": {
@@ -305,8 +315,19 @@
       }
     },
     {
-      "name": "Libra Cipriota",
-      "country": "Chipre",
+      "name": "Leone",
+      "country": "Sierra Leone",
+      "iso": "SLL",
+      "symbol": "Le",
+      "min": {
+        "den": [1,100],
+        "value": [1,200],
+        "composition": ["bronze"]
+      }
+    },
+    {
+      "name": "Pound",
+      "country": "Cyprus",
       "iso": "CYP",
       "symbol": "£",
       "min": {
@@ -328,7 +349,7 @@
     },
     {
       "name": "Baht",
-      "country": "Tailândia",
+      "country": "Thailand",
       "iso": "THB",
       "symbol": "฿",
       "min": {
@@ -338,8 +359,8 @@
       }
     },
     {
-      "name": "Dólar Australiano",
-      "country": "Austrália",
+      "name": "Dollar",
+      "country": "Australia",
       "iso": "AUD",
       "symbol": "AU$",
       "min": {
@@ -348,7 +369,7 @@
       }
     },
     {
-      "name": "Peso Argentino",
+      "name": "Peso",
       "country": "Argentina",
       "iso": "ARS",
       "symbol": "$",
@@ -358,8 +379,8 @@
       }
     },
     {
-      "name": "Peso Uruguaio",
-      "country": "Uruguai",
+      "name": "Peso",
+      "country": "Uruguay",
       "iso": "UYU",
       "symbol": "$U",
       "min": {
@@ -369,7 +390,7 @@
       }
     },
     {
-      "name": "Peso Chileno",
+      "name": "Peso",
       "country": "Chile",
       "iso": "CLP",
       "symbol": "$",
@@ -379,8 +400,8 @@
       }
     },
     {
-      "name": "Peso Mexicano",
-      "country": "México",
+      "name": "Peso",
+      "country": "Mexico",
       "iso": "MXN",
       "symbol": "Mex$",
       "min": {
@@ -391,7 +412,7 @@
     },
     {
       "name": "Balboa",
-      "country": "Panamá",
+      "country": "Panama",
       "iso": "PAB",
       "symbol": "B/. ",
       "min": {
@@ -412,7 +433,7 @@
     },
     {
       "name": "Boliviano",
-      "country": "Bolívia",
+      "country": "Bolivia",
       "iso": "BOB",
       "symbol": "Bs",
       "min": {
@@ -423,7 +444,7 @@
     },
     {
       "name": "Córdoba",
-      "country": "Nicarágua",
+      "country": "Nicaragua",
       "iso": "NIO",
       "symbol": "C$",
       "min": {
@@ -433,8 +454,8 @@
       }
     },
     {
-      "name": "Dólar Canadense",
-      "country": "Canadá",
+      "name": "Dollar",
+      "country": "Canada",
       "iso": "CAD",
       "symbol": "CA$",
       "min": {
@@ -444,7 +465,7 @@
     },
     {
       "name": "Litas",
-      "country": "Lituânia",
+      "country": "Lithuania",
       "iso": "LTL",
       "symbol": "Lt",
       "min": {
@@ -453,8 +474,29 @@
       }
     },
     {
+      "name": "Lira",
+      "country": "Turkey",
+      "iso": "TRY",
+      "symbol": "₺",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium-bronze", "bronze"]
+      }
+    },
+    {
+      "name": "Tolar",
+      "country": "Slovenia",
+      "iso": "SIT",
+      "symbol": "SIT",
+      "min": {
+        "den": [1,100],
+        "value": [1,10],
+        "composition": ["aluminium"]
+      }
+    },
+    {
       "name": "Euro",
-      "country": "União Europeia",
+      "country": "European Union",
       "iso": "EUR",
       "symbol": "€",
       "min": {
