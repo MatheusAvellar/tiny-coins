@@ -41,6 +41,17 @@
       }
     },
     {
+      "name": "Dollar",
+      "country": "Namibia",
+      "iso": "NAD",
+      "symbol": "N$",
+      "min": {
+        "den": [1,100],
+        "value": [5,100],
+        "composition":  ["nickel-plated-steel", "stainless-steel"]
+      }
+    },
+    {
       "name": "Dalasi",
       "country": "The Gambia",
       "iso": "GMD",
@@ -343,7 +354,7 @@
       "symbol": "₭",
       "min": {
         "den": [1,100],
-        "value": [1,10],
+        "value": [10,100],
         "composition": ["aluminium"]
       }
     },
@@ -385,7 +396,7 @@
       "symbol": "$U",
       "min": {
         "den": [1,100],
-        "value": [1,10],
+        "value": [10,100],
         "composition": ["stainless-steel"]
       }
     },
@@ -490,8 +501,30 @@
       "symbol": "SIT",
       "min": {
         "den": [1,100],
-        "value": [1,10],
+        "value": [10,100],
         "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Koruna",
+      "country": "Czech Republic",
+      "iso": "CZK",
+      "symbol": "Kč",
+      "min": {
+        "den": [1,100],
+        "value": [10,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Tenge",
+      "country": "Kazakhstan",
+      "iso": "KZT",
+      "symbol": "₸",
+      "min": {
+        "den": [1,100],
+        "value": [2,100],
+        "composition": ["brass-plated-zinc","copper-plated-zinc"]
       }
     },
     {
