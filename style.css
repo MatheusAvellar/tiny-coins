@@ -88,6 +88,7 @@ li article .description {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-right: .5em;
 }
 li article .description.long {
   grid-column: 2/5;
@@ -176,6 +177,9 @@ li article .description .value .aluminium::before {
 }
 li article .description .value .aluminium-bronze::before {
   background-color: #c3b665;
+}
+li article .description .value .iron::before {
+  background-color: #8f8f8f;
 }
 li article .description .value .tin::before {
   background-color: #d4dedb;

@@ -11,6 +11,26 @@
       }
     },
     {
+      "name": "Peso",
+      "country": "Cuba",
+      "iso": "CUP",
+      "symbol": "₱",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-nickel","brass","aluminium"]
+      }
+    },
+    {
+      "name": "Dollar",
+      "country": "Bermuda",
+      "iso": "BMD",
+      "symbol": "$",
+      "min": {
+        "value": [1,100],
+        "composition":  ["bronze", "copper-plated-steel", "copper-plated-zinc"]
+      }
+    },
+    {
       "name": "Dollar",
       "country": "Suriname",
       "iso": "SRD",
@@ -94,6 +114,16 @@
     },
     {
       "name": "Pound",
+      "country": "Saint Helena & Ascension",
+      "iso": "HAP",
+      "symbol": "£",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","copper-plated-steel"]
+      }
+    },
+    {
+      "name": "Pound",
       "country": "Isle of Man",
       "iso": "IMP",
       "symbol": "£",
@@ -151,6 +181,16 @@
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-zinc"]
+      }
+    },
+    {
+      "name": "Kwacha",
+      "country": "Malawi",
+      "iso": "MWK",
+      "symbol": "K",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","copper-plated-steel"]
       }
     },
     {
@@ -505,6 +545,26 @@
       }
     },
     {
+      "name": "Nakfa",
+      "country": "Eritrea",
+      "iso": "ERN",
+      "symbol": "Nkf",
+      "min": {
+        "value": [1,100],
+        "composition": ["nickel-plated-steel"]
+      }
+    },
+    {
+      "name": "Metical",
+      "country": "Mozambique",
+      "iso": "MZN",
+      "symbol": "MT",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper-plated-steel"]
+      }
+    },
+    {
       "name": "Tolar",
       "country": "Slovenia",
       "iso": "SIT",
@@ -524,6 +584,16 @@
         "den": [1,100],
         "value": [10,100],
         "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Krona",
+      "country": "Sweden",
+      "iso": "SEK",
+      "symbol": "kr",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","iron"]
       }
     },
     {
@@ -555,6 +625,16 @@
       "min": {
         "value": [1,1000],
         "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Rupee",
+      "country": "Seychelles",
+      "iso": "SCR",
+      "symbol": "SR",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","aluminium","brass","brass-plated-steel","bronze-plated-steel"]
       }
     },
     {
