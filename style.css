@@ -48,7 +48,7 @@ ul {
 li {
   list-style: none;
   max-width: 650px;
-  margin: auto;
+  display: flex;
 }
 li > article {
   display: grid;
@@ -60,6 +60,8 @@ li > article {
   box-shadow: 0 3px 15px rgb(51 51 51 / 20%);
   border-radius: 10px;
   margin-bottom: 2em;
+  padding-right: 1em;
+  flex-grow: 1;
 }
 li figure {
   padding: 25px 20px 20px;
@@ -130,6 +132,10 @@ li article .description .value .zinc-plated-steel::before {
   background-color: #b9b9b9;
   border: 0.25em solid #d6d6d6;
 }
+li article .description .value .brass-plated-zinc::before {
+  background-color: #d6d6d6;
+  border: 0.25em solid #d2bf60;
+}
 li article .description .value .copper-plated-zinc::before {
   background-color: #d6d6d6;
   border: 0.25em solid #cd9f86;
@@ -141,6 +147,10 @@ li article .description .value .copper-nickel-plated-steel::before {
 li article .description .value .nickel-plated-steel::before {
   background-color: #b9b9b9;
   border: 0.25em solid #e4dfc4;
+}
+li article .description .value .brass-plated-steel::before {
+  background-color: #b9b9b9;
+  border: 0.25em solid #d2bf60;
 }
 li article .description .value .chromium-plated-steel::before {
   background-color: #b9b9b9;
@@ -177,7 +187,7 @@ li article .description .value.tiny {
   font-size: 80%;
   font-weight: 700;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   h3 {
     font-size: 24px;
   }
@@ -194,5 +204,28 @@ li article .description .value.tiny {
   }
   li article .description.long {
     grid-column: 1/4;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header,main,footer {
+    max-width: 1500px;
+    padding: 1em;
+  }
+  #coins {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: .75em;
+  }
+}
+@media screen and (min-width: 2000px) {
+  header,main,footer {
+    max-width: 2050px;
+    padding: 1em;
+  }
+  #coins {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .75em;
   }
 }

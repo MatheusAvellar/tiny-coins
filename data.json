@@ -326,6 +326,16 @@
       }
     },
     {
+      "name": "Leu",
+      "country": "Romania",
+      "iso": "RON",
+      "symbol": "L",
+      "min": {
+        "value": [1,100],
+        "composition": ["brass-plated-steel"]
+      }
+    },
+    {
       "name": "Leone",
       "country": "Sierra Leone",
       "iso": "SLL",
@@ -525,6 +535,36 @@
         "den": [1,100],
         "value": [2,100],
         "composition": ["brass-plated-zinc","copper-plated-zinc"]
+      }
+    },
+    {
+      "name": "Birr",
+      "country": "Ethiopia",
+      "iso": "ETB",
+      "symbol": "Br",
+      "min": {
+        "value": [1,100],
+        "composition": ["copper","aluminium"]
+      }
+    },
+    {
+      "name": "Dinar",
+      "country": "Tunisia",
+      "iso": "TND",
+      "symbol": "DT",
+      "min": {
+        "value": [1,1000],
+        "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Rufiyaa",
+      "country": "Maldives",
+      "iso": "MVR",
+      "symbol": "Rf",
+      "min": {
+        "value": [1,100],
+        "composition": ["bronze","aluminium"]
       }
     },
     {
