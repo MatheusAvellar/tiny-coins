@@ -346,6 +346,16 @@
       }
     },
     {
+      "name": "Ruble",
+      "country": "Transnistria",
+      "iso": "PRB",
+      "symbol": "руб",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium"]
+      }
+    },
+    {
       "name": "Renminbi",
       "country": "China",
       "iso": "CNY",
@@ -353,6 +363,16 @@
       "min": {
         "value": [1,100],
         "composition": ["aluminium"]
+      }
+    },
+    {
+      "name": "Lev",
+      "country": "Bulgaria",
+      "iso": "BGN",
+      "symbol": "лв.",
+      "min": {
+        "value": [1,100],
+        "composition": ["aluminium-bronze","bronze-plated-steel"]
       }
     },
     {
@@ -373,6 +393,16 @@
       "min": {
         "value": [1,100],
         "composition": ["brass-plated-steel"]
+      }
+    },
+    {
+      "name": "Loti",
+      "country": "Lesotho",
+      "iso": "LSL",
+      "symbol": "L",
+      "min": {
+        "value": [1,100],
+        "composition": ["nickel-brass","brass","brass-plated-steel"]
       }
     },
     {
