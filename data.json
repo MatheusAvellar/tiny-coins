@@ -5,6 +5,7 @@
       "country": "Brazil",
       "iso": "BRL",
       "symbol": "R$",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["stainless-steel","copper-plated-steel"]
@@ -15,6 +16,7 @@
       "country": "Cuba",
       "iso": "CUP",
       "symbol": "₱",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["copper-nickel","brass","aluminium"]
@@ -25,6 +27,7 @@
       "country": "Bermuda",
       "iso": "BMD",
       "symbol": "$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition":  ["bronze", "copper-plated-steel", "copper-plated-zinc"]
@@ -35,6 +38,7 @@
       "country": "Suriname",
       "iso": "SRD",
       "symbol": "Sr$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition":  ["bronze", "aluminium", "copper-plated-steel"]
@@ -45,6 +49,7 @@
       "country": "Belize",
       "iso": "BZD",
       "symbol": "BZ$",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition":  ["bronze", "aluminium"]
@@ -55,6 +60,7 @@
       "country": "Trinidad & Tobago",
       "iso": "TTD",
       "symbol": "TT$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition":  ["bronze"]
@@ -65,6 +71,7 @@
       "country": "Namibia",
       "iso": "NAD",
       "symbol": "N$",
+      "copy": "Bank of Namibia",
       "min": {
         "den": [1,100],
         "value": [5,100],
@@ -76,6 +83,7 @@
       "country": "The Gambia",
       "iso": "GMD",
       "symbol": "D",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition":  ["bronze", "copper-plated-steel"]
@@ -83,20 +91,10 @@
     },
     {
       "name": "Dollar",
-      "country": "USA",
-      "iso": "USD",
-      "symbol": "US$",
-      "min": {
-        "den": [1,100],
-        "value": [1,200],
-        "composition": ["copper"]
-      }
-    },
-    {
-      "name": "Dollar",
       "country": "Cayman Islands",
       "iso": "KYD",
       "symbol": "CI$",
+      "copy": "© Cayman Islands Monetary Authority",
       "min": {
         "value": [1,100],
         "composition": ["bronze","copper-plated-steel"]
@@ -107,6 +105,7 @@
       "country": "Tonga",
       "iso": "TOP",
       "symbol": "T$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze"]
@@ -115,8 +114,9 @@
     {
       "name": "Pound",
       "country": "Saint Helena & Ascension",
-      "iso": "HAP",
+      "iso": "SHP",
       "symbol": "£",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","copper-plated-steel"]
@@ -127,6 +127,7 @@
       "country": "Isle of Man",
       "iso": "IMP",
       "symbol": "£",
+      "copy": "© Pobjoy Mint",
       "min": {
         "den": [1,100],
         "value": [1,200],
@@ -138,6 +139,7 @@
       "country": "Egypt",
       "iso": "EGP",
       "symbol": "E£",
+      "copy": false,
       "min": {
         "value": [1,1000],
         "composition": ["aluminium"]
@@ -148,6 +150,7 @@
       "country": "East Timor",
       "iso": "TLD",
       "symbol": "US$",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["nickel-plated-steel"]
@@ -155,19 +158,10 @@
     },
     {
       "name": "Dollar",
-      "country": "Ecuador",
-      "iso": "ECD",
-      "symbol": "US$",
-      "min": {
-        "value": [1,100],
-        "composition": ["brass","copper-plated-steel"]
-      }
-    },
-    {
-      "name": "Dollar",
       "country": "Guyana",
       "iso": "GYD",
       "symbol": "G$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["nickel-brass"]
@@ -178,6 +172,7 @@
       "country": "Papua New Guinea",
       "iso": "PGK",
       "symbol": "K",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-zinc"]
@@ -188,6 +183,7 @@
       "country": "Malawi",
       "iso": "MWK",
       "symbol": "K",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","copper-plated-steel"]
@@ -198,6 +194,7 @@
       "country": "Honduras",
       "iso": "HNL",
       "symbol": "L",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-steel"]
@@ -208,6 +205,7 @@
       "country": "Gibraltar",
       "iso": "GIP",
       "symbol": "£",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","bronze-plated-steel"]
@@ -218,6 +216,7 @@
       "country": "Falkland Islands",
       "iso": "FKP",
       "symbol": "FK£",
+      "copy": "?",
       "min": {
         "den": [1,100],
         "value": [1,200],
@@ -229,6 +228,7 @@
       "country": "Netherlands Antilles",
       "iso": "ANG",
       "symbol": "NAƒ",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","aluminium"]
@@ -239,6 +239,7 @@
       "country": "North Korea",
       "iso": "KPW",
       "symbol": "₩",
+      "copy": false,
       "min": {
         "den": [1,100],
         "value": [1,200],
@@ -250,6 +251,7 @@
       "country": "South Korea",
       "iso": "KRW",
       "symbol": "₩",
+      "copy": false,
       "min": {
         "value": [1,1],
         "composition": ["brass", "aluminium"]
@@ -257,19 +259,10 @@
     },
     {
       "name": "Dollar",
-      "country": "Jamaica",
-      "iso": "JMD",
-      "symbol": "J$",
-      "min": {
-        "value": [1,100],
-        "composition": ["bronze","aluminium"]
-      }
-    },
-    {
-      "name": "Dollar",
       "country": "Barbados",
       "iso": "BBD",
       "symbol": "Bds$",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","copper-plated-zinc","copper-plated-steel"]
@@ -280,6 +273,7 @@
       "country": "Bahamas",
       "iso": "BSD",
       "symbol": "B$",
+      "copy": "© Central Bank of The Bahamas",
       "min": {
         "value": [1,100],
         "composition": ["nickel-brass","brass","copper-plated-zinc","copper-plated-steel"]
@@ -290,6 +284,7 @@
       "country": "Solomon Islands",
       "iso": "SBD",
       "symbol": "SI$",
+      "copy": "© Central Bank of Solomon Islands",
       "min": {
         "value": [1,100],
         "composition": ["bronze", "bronze-plated-steel"]
@@ -300,6 +295,7 @@
       "country": "Fiji",
       "iso": "FJD",
       "symbol": "FJ$",
+      "copy": "© Reserve Bank of Fiji",
       "min": {
         "value": [1,100],
         "composition": ["bronze", "copper-plated-zinc", "copper-plated-steel"]
@@ -310,6 +306,7 @@
       "country": "Vanuatu",
       "iso": "VUV",
       "symbol": "VT",
+      "copy": "?",
       "min": {
         "value": [1,1],
         "composition": ["nickel-brass"]
@@ -320,6 +317,7 @@
       "country": "Finland",
       "iso": "FIM",
       "symbol": "mk",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["copper","aluminium"]
@@ -330,6 +328,7 @@
       "country": "Russia",
       "iso": "RUB",
       "symbol": "₽",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["copper-nickel-plated-steel"]
@@ -340,6 +339,7 @@
       "country": "Belarus",
       "iso": "BYN",
       "symbol": "Br",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-steel"]
@@ -350,6 +350,7 @@
       "country": "Transnistria",
       "iso": "PRB",
       "symbol": "руб",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["aluminium"]
@@ -360,6 +361,7 @@
       "country": "China",
       "iso": "CNY",
       "symbol": "元",
+      "copy": "© People's Bank of China",
       "min": {
         "value": [1,100],
         "composition": ["aluminium"]
@@ -370,6 +372,7 @@
       "country": "Bulgaria",
       "iso": "BGN",
       "symbol": "лв.",
+      "copy": "© Bulgarian National Bank",
       "min": {
         "value": [1,100],
         "composition": ["aluminium-bronze","bronze-plated-steel"]
@@ -380,6 +383,7 @@
       "country": "Moldova",
       "iso": "MDL",
       "symbol": "L",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["aluminium"]
@@ -390,6 +394,7 @@
       "country": "Romania",
       "iso": "RON",
       "symbol": "L",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["brass-plated-steel"]
@@ -400,6 +405,7 @@
       "country": "Lesotho",
       "iso": "LSL",
       "symbol": "L",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["nickel-brass","brass","brass-plated-steel"]
@@ -410,6 +416,7 @@
       "country": "Sierra Leone",
       "iso": "SLL",
       "symbol": "Le",
+      "copy": "© Bank of Sierra Leone",
       "min": {
         "den": [1,100],
         "value": [1,200],
@@ -421,6 +428,7 @@
       "country": "Cyprus",
       "iso": "CYP",
       "symbol": "£",
+      "copy": "?",
       "min": {
         "den": [1,100],
         "value": [1,200],
@@ -432,6 +440,7 @@
       "country": "Laos",
       "iso": "LAK",
       "symbol": "₭",
+      "copy": "?",
       "min": {
         "den": [1,100],
         "value": [10,100],
@@ -439,21 +448,11 @@
       }
     },
     {
-      "name": "Baht",
-      "country": "Thailand",
-      "iso": "THB",
-      "symbol": "฿",
-      "min": {
-        "den": [1,100],
-        "value": [1,200],
-        "composition": ["bronze"]
-      }
-    },
-    {
       "name": "Dollar",
       "country": "Australia",
       "iso": "AUD",
       "symbol": "AU$",
+      "copy": "© Reserve Bank of Australia",
       "min": {
         "value": [1,100],
         "composition": ["bronze"]
@@ -464,73 +463,10 @@
       "country": "Argentina",
       "iso": "ARS",
       "symbol": "$",
+      "copy": "© Central Bank of the Argentine Republic",
       "min": {
         "value": [1,100],
         "composition": ["aluminium-bronze","bronze"]
-      }
-    },
-    {
-      "name": "Peso",
-      "country": "Uruguay",
-      "iso": "UYU",
-      "symbol": "$U",
-      "min": {
-        "den": [1,100],
-        "value": [10,100],
-        "composition": ["stainless-steel"]
-      }
-    },
-    {
-      "name": "Peso",
-      "country": "Chile",
-      "iso": "CLP",
-      "symbol": "$",
-      "min": {
-        "value": [1,100],
-        "composition": ["aluminium"]
-      }
-    },
-    {
-      "name": "Peso",
-      "country": "Mexico",
-      "iso": "MXN",
-      "symbol": "Mex$",
-      "min": {
-        "den": [1,100],
-        "value": [5,100],
-        "composition": ["stainless-steel"]
-      }
-    },
-    {
-      "name": "Balboa",
-      "country": "Panama",
-      "iso": "PAB",
-      "symbol": "B/. ",
-      "min": {
-        "den": [1,100],
-        "value": [1,200],
-        "composition": ["copper-nickel"]
-      }
-    },
-    {
-      "name": "Sol",
-      "country": "Peru",
-      "iso": "PEN",
-      "symbol": "S/",
-      "min": {
-        "value": [1,100],
-        "composition": ["brass","aluminium"]
-      }
-    },
-    {
-      "name": "Boliviano",
-      "country": "Bolivia",
-      "iso": "BOB",
-      "symbol": "Bs",
-      "min": {
-        "den": [1,100],
-        "value": [2,100],
-        "composition": ["stainless-steel"]
       }
     },
     {
@@ -538,6 +474,7 @@
       "country": "Nicaragua",
       "iso": "NIO",
       "symbol": "C$",
+      "copy": "?",
       "min": {
         "den": [1,100],
         "value": [5,100],
@@ -549,6 +486,7 @@
       "country": "Canada",
       "iso": "CAD",
       "symbol": "CA$",
+      "copy": "© Royal Canadian Mint",
       "min": {
         "value": [1,100],
         "composition": ["bronze","copper","copper-plated-zinc","copper-plated-steel"]
@@ -559,6 +497,7 @@
       "country": "Lithuania",
       "iso": "LTL",
       "symbol": "Lt",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["aluminium"]
@@ -569,6 +508,7 @@
       "country": "Turkey",
       "iso": "TRY",
       "symbol": "₺",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["aluminium-bronze", "bronze"]
@@ -579,6 +519,7 @@
       "country": "Eritrea",
       "iso": "ERN",
       "symbol": "Nkf",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["nickel-plated-steel"]
@@ -589,6 +530,7 @@
       "country": "Mozambique",
       "iso": "MZN",
       "symbol": "MT",
+      "copy": "© Bank of Mozambique",
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-steel"]
@@ -599,6 +541,7 @@
       "country": "Slovenia",
       "iso": "SIT",
       "symbol": "SIT",
+      "copy": "© Bank of Slovenia",
       "min": {
         "den": [1,100],
         "value": [10,100],
@@ -610,6 +553,7 @@
       "country": "Czech Republic",
       "iso": "CZK",
       "symbol": "Kč",
+      "copy": false,
       "min": {
         "den": [1,100],
         "value": [10,100],
@@ -621,6 +565,7 @@
       "country": "Sweden",
       "iso": "SEK",
       "symbol": "kr",
+      "copy": "© Sveriges riksbank",
       "min": {
         "value": [1,100],
         "composition": ["bronze","iron"]
@@ -631,6 +576,7 @@
       "country": "Kazakhstan",
       "iso": "KZT",
       "symbol": "₸",
+      "copy": false,
       "min": {
         "den": [1,100],
         "value": [2,100],
@@ -642,6 +588,7 @@
       "country": "Ethiopia",
       "iso": "ETB",
       "symbol": "Br",
+      "copy": "© National Bank of Ethiopia",
       "min": {
         "value": [1,100],
         "composition": ["copper","aluminium"]
@@ -652,6 +599,7 @@
       "country": "Tunisia",
       "iso": "TND",
       "symbol": "DT",
+      "copy": "?",
       "min": {
         "value": [1,1000],
         "composition": ["aluminium"]
@@ -662,6 +610,7 @@
       "country": "Seychelles",
       "iso": "SCR",
       "symbol": "SR",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","aluminium","brass","brass-plated-steel","bronze-plated-steel"]
@@ -672,6 +621,7 @@
       "country": "Maldives",
       "iso": "MVR",
       "symbol": "Rf",
+      "copy": "?",
       "min": {
         "value": [1,100],
         "composition": ["bronze","aluminium"]
@@ -682,6 +632,7 @@
       "country": "European Union",
       "iso": "EUR",
       "symbol": "€",
+      "copy": false,
       "min": {
         "value": [1,100],
         "composition": ["copper-plated-steel"]

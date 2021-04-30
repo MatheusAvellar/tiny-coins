@@ -13,13 +13,16 @@
   <header>
     <h1> Tiny Coins </h1>
     <p>
-      Tiny coins from my tiny collection.
+      Tiny coins from my tiny collection!
     </p>
-  </header>
-  <main>
+    <p>
+      For copyright information, see the note at the bottom of the page.
+    </p>
     <p id="coin-total">
       <span id="coin-count">??</span> catalogued tiny coins
     </p>
+  </header>
+  <main>
     <section>
       <ul id="coins"></ul>
     </section>
@@ -74,6 +77,16 @@ loadJSON("data.json", function(json) {
         fig.appendChild(obverse);
         fig.appendChild(reverse);
         [obverse, reverse].forEach(i => {i.onerror = () => i.src = "img/ono.png"});
+        if(c.copy) {
+          fig.classList.add("protect");
+          const copyright = document.createElement("figcaption");
+          const p = document.createElement("p");
+          p.textContent = c.copy;
+          if(c.copy === "?")
+            p.textContent = "Copyright status unknown";
+          copyright.appendChild(p);
+          fig.appendChild(copyright);
+        }
       profile.appendChild(fig);
 
       const info = document.createElement("article");
@@ -114,7 +127,11 @@ loadJSON("data.json", function(json) {
           const v = c.min.value;
           const dec = padEnd(v[0]/v[1]);
           switch(d[0]) {
-            case "Country":  val.textContent = value; break;
+            case "Country":
+              if(value.length >= 16)
+                val.style.fontSize = "75%";
+              val.textContent = value;
+              break;
             case "Tiniest Value":
               const st = document.createElement("strong");
               st.textContent = dec;
@@ -164,7 +181,27 @@ function padEnd(n) {
     </script>
   </main>
   <footer>
-    <!-- ¯\_(ツ)_/¯ -->
+    <section id="copyright">
+      <h2> Copyright </h2>
+      <p>
+        Images present in this website are my own work, from a personal
+        collection; I am not affiliated with or endorsed by any entity,
+        governmental or otherwise.
+      </p>
+      <p>
+        The images are sufficiently low resolution as to not allow the risk of
+        counterfeiting, error or confusion. They are being used for educational
+        and academic purposes only, and for absolutely no monetary gain.
+      </p>
+      <p>
+        Coins for which the copyright status is unknown or ambiguous were
+        treated as if they were copyrighted.
+      </p>
+      <p>
+        For complaints and removal requests, please contact
+        <b>copyright</b>@<b>avl.la</b>.
+      </p>
+    </section>
   </footer>
   <!--[Ref] csswizardry.com/2020/05/the-fastest-google-fonts-->
   <link rel="preload" as="style"
